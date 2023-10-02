@@ -1,12 +1,22 @@
 <style>
+  .subHeaders{
+    font-size: 40px;
+  }
   .underHeader{
-    line-height: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 25px;
+    line-height: normal;
   }
   .Header{
-    margin-bottom: 10px;
-    font-size: 75px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 60px;
   }
-  button{
+  .mainButton:hover{
+    opacity: 0.75;
+  }
+  .mainButton{
     color: white;
     background-color: rgb(142, 195, 37);
     border: none;
@@ -15,6 +25,7 @@
     height: 36px;
     width: 110px;
     margin-right: 10px;
+    transition: opacity 0.5s;
   }
   body{
     background-color: rgb(150, 150, 150);
@@ -28,18 +39,36 @@
     <title>Dominic's Web Portfolio</title>
 </head>
 <body>
-  <p class="Header">Hi I'm Dominic</p>
+  <h1 class="Header">Hi I'm Dominic</h1>
   <p class="underHeader">
-    Current A level student studying computer sience, maths pythics and philosophy with a vision to study robotics or AI at university
+    I am a current A level student studying computer sience, maths pythics and philosophy<br>with a vision to study robotics or AI at university hopefully at<br> Massachusetts Institute of Technology in America
   </p>
-  <button>
+  <button class="mainButton"><a href="futureProjects">
     Past projects
-  </button>
-  <button>
+  </button></a>
+  <button class="mainButton">
     Current projects
   </button>
-  <button>
+  <button class="mainButton">
     Future projects
   </button>
+  <h2 class="subHeaders">About Me</h2>
+  <p>
+    My interest in computer science grew from around the age of 14 when I took computer science at GCSE level to now wanting to study either AI or Robotics at university hopefully MIT in America
+  </p>
+  <h3 class="subHeaders">Past projects</h3>
+  <p class="pastProjects">Calculator:
+    One of my past projects has been making a simple calculator that can do addition subtraction, multiplication, and division
+    Roblox game
+    Another of my past projects was done in Lua rather than Python and was scripting a Roblox obstacle course game
+    </p>
+  <h4 class="subHeaders">Current projects</h4>
+  <p class="currentProjects">
+    Pygame
+  </p>
+  <h5 class="subHeaders">Future projects</h5>
+  <p class="futureProjects">
+    AI/Chatbot
+  </p>
 </body>
 </html>
