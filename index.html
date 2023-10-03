@@ -1,8 +1,4 @@
 <style>
-  .mainButton:link, .mainButton:visited{
-    color: white;
-    text-decoration: none;
-  }
   .subHeaders{
     font-size: 40px;
   }
@@ -20,16 +16,13 @@
   .mainButton:hover{
     opacity: 0.75;
   }
-  .mainButton{
-    color: white;
-    background-color: rgb(142, 195, 37);
-    border: none;
-    border-radius: 4px ;
-    cursor: pointer;
-    height: 36px;
-    width: 110px;
-    margin-right: 10px;
-    transition: opacity 0.5s;
+  .linkButton:Link, .linkButton:Visited{
+    background-color: rgb(112, 152, 67);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
   }
   body{
     background-color: rgb(150, 150, 150);
@@ -47,15 +40,15 @@
   <p class="underHeader">
     I am a current A level student studying computer sience, maths pythics and philosophy<br>with a vision to study robotics or AI at university hopefully at<br> Massachusetts Institute of Technology in America
   </p>
-  <button class="mainButton"><a href="#pastProjects">
+  <a href="#pastProjects" class="linkButton">
     Past projects
-  </button></a>
-  <button class="mainButton"><a href="#currentProjects">
+  </a>
+  <a href="#currentProjects" class="linkButton">
     Current projects
-  </button></a>
-  <button class="mainButton"><a href="#futureProjects">
+  </a>
+  <a href="#futureProjects" class="linkButton">
     Future projects
-  </button></a>
+  </a>
   <h2 class="subHeaders">About Me</h2>
   <p>
     My interest in computer science grew from around the age of 14 when I took computer science at GCSE level to now wanting to study either AI or Robotics at university hopefully MIT in America
